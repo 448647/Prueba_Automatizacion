@@ -1,0 +1,8 @@
+p{
+    font-size: inherit;
+    font-weight: 400;
+    color: var(--oxd-primary-font-color,#f7f3f3);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+ }

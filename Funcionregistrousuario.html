@@ -1,0 +1,24 @@
+<a
+@stories
+Feature: user register
+As a user, I want to fill out the data form to register as a user in OrangeHRM></a>
+
+ <a
+ @scenario:
+  Scenario Outline: user register
+  Given that <firstName> is on OrangeHRM page>
+
+    <When she fills out her personal information
+      | firstName  | lastName    |email  | birthMonth   | birthDay   | birthYear  |
+      | <firstName> | <lastName> |<email>| <birthMonth> | <birthDay> | <birthYear> |>
+
+    <And she enters her address data
+    | firstName  | Middle Name   |  lastName   | vacancy   | email    | Contact Number    | resume   |  Keywords| Notes   |
+    |<firstName> | <Middle Name> | <lastName>  | <vacancy> | <email > | <Contact Number>  | <resume> |<Keywords>|<Notes>  |>
+
+
+    <Then she should be registered on the page
+
+    Examples:
+    | firstName  | Middle Name  |    lastName   | vacancy          | email                                | Contact Number  | resume     |  Keywords     |  Notes |
+    | Erika      | Liliana      |    Espinosa   | Senior QA lead   | erikaduque.98@outlook.com            | 3123360107      |Adjunto PDF |    N-A        | N/A    |></Then>
